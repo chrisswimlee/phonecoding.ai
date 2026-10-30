@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PhoneCoding Learn — SwiftUI, on your phone</title>
+    <meta
+      name="description"
+      content="Learn iOS development on your phone. SwiftUI drills with a live preview. Android lessons are under development."
+    />
+    <meta name="theme-color" content="#efe8dc" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="edu-page">
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="top">
+      <a class="wordmark" href="index.html">PhoneCoding</a>
+
+      <div class="site-switch" role="navigation" aria-label="Product sides">
+        <a class="side-pill" href="index.html">
+          ← Studio Side
+        </a>
+        <a class="side-pill is-active is-amber" href="learn.html" aria-current="page">
+          Learn SwiftUI
+        </a>
+      </div>
+
+      <nav class="nav" aria-label="Educational sections">
+        <a href="#classroom">Classroom</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#method">Why Mobile Works</a>
+        <a href="index.html#ios-studio">iOS Studio</a>
+        <a href="index.html#android-studio">Android <span class="dev-pill-inline">Under Dev</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="edu-hero">
+        <div class="edu-hero-copy">
+          <p class="eyebrow eyebrow-amber">iOS development classroom · Android lessons under development</p>
+          <h1>Learn SwiftUI<br />on the phone<br /><em>you’re building for.</em></h1>
+          <p class="deck">
+            Every drill is an iOS screen: tap the line that breaks it, patch one
+            SwiftUI token, and watch the iPhone preview update. Jetpack Compose
+            lessons stay closed while Android Studio is under development.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-amber" href="#classroom">
+              Start the SwiftUI drills ↓
+            </a>
+            <a class="button button-quiet" href="index.html#platforms">
+              Get Studio (iOS &amp; Android Under Dev)
+            </a>
+          </div>
+        </div>
+
+        <aside class="edu-scorecard" aria-label="Your mobile learning session">
+          <p class="lesson-kicker">Commute mastery session</p>
+          <div class="score-row">
+            <div>
+              <strong class="score-num" id="edu-solved-count">0 / 4</strong>
+              <span>modules completed</span>
+            </div>
+            <div>
+              <strong class="score-num" id="edu-xp-count">0 XP</strong>
+              <span>earned this session</span>
+            </div>
+          </div>
+          <p class="score-note" id="edu-streak-note">
+            These four modules are iOS. Finish one and its SwiftUI takeaway stays in the recall deck.
+          </p>
+          <div class="score-links">
+            <a href="index.html#ios-studio">iOS Studio · Early Build →</a>
+            <a href="index.html#android-studio">Android Studio · Under Development →</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="edu-classroom" id="classroom" aria-labelledby="classroom-heading">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-amber" id="tracks">iOS track · 4 SwiftUI modules</p>
+          <h2 id="classroom-heading">Build the screen. Then explain it.</h2>
+          <p>
+            Start with the view on the phone: state that redraws it, a guard
+            that blocks an empty send, an actor that survives a network handoff,
+            and type that scales with the reader. Android modules are listed
+            below as under development.
+          </p>
+        </div>
+
+        <div class="module-grid" role="tablist" aria-label="Learning modules">
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            class="module-card is-active"
+            data-module="counter"
+          >
+            <span class="module-lane">iOS · SwiftUI</span>
+            <strong>01 · State on a screen</strong>
+            <span>Why a tap redraws the iPhone view</span>
+          </button>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            class="module-card"
+            data-module="guard"
+          >
+            <span class="module-lane">iOS · SwiftUI</span>
+            <strong>02 · Empty sends</strong>
+            <span>Block a blank prompt before the app calls the network</span>
+          </button>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            class="module-card"
+            data-module="actor"
+          >
+            <span class="module-lane">iOS · SwiftUI</span>
+            <strong>03 · Reconnect on the move</strong>
+            <span>Keep one socket open when the phone changes networks</span>
+          </button>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            class="module-card"
+            data-module="font"
+          >
+            <span class="module-lane">iOS · SwiftUI</span>
+            <strong>04 · Type that scales</strong>
+            <span>Let the file name grow with the reader’s text size</span>
+          </button>
+        </div>
+
+        <p class="android-classroom-note">
+          Android development lessons (Jetpack Compose state, navigation, and
+          Dynamic Type equivalents) are <strong>under development</strong> with
+          <a href="index.html#android-studio">PhoneCoding Studio for Android</a>.
+          The playable modules on this page are iOS.
+        </p>
+
+        <div class="classroom-workbench">
+          <div class="lesson-lab edu-lab" aria-label="Interactive module workbench">
+            <div class="lab-header">
+              <div>
+                <p class="lesson-kicker" id="edu-lab-kicker">iOS · SwiftUI · CounterCard.swift</p>
+                <h3 id="edu-lab-title">State on a screen</h3>
+              </div>
+              <span class="lab-progress" id="edu-lab-progress">0 / 3 steps</span>
+            </div>
+
+            <div class="lab-tabs" role="tablist" aria-label="Module step">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                class="lab-tab is-active"
+                data-edu-step="locate"
+              >
+                1 · Spot the line
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="lab-tab"
+                data-edu-step="patch"
+              >
+                2 · Tap the token
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="lab-tab"
+                data-edu-step="why"
+              >
+                3 · Socratic why
+              </button>
+            </div>
+
+            <div class="lab-stage" id="edu-lab-stage" aria-live="polite"></div>
+          </div>
+
+          <aside class="live-output-panel" aria-label="Live mobile output &amp; recall card">
+            <div class="output-card">
+              <div class="output-header">
+                <span class="lesson-kicker">Live Phone Output Preview</span>
+                <span class="output-pill" id="edu-output-status">Before patch</span>
+              </div>
+              <div class="output-screen" id="edu-output-screen"></div>
+              <p class="output-caption" id="edu-output-caption"></p>
+            </div>
+
+            <div class="recall-card">
+              <p class="lesson-kicker">Spaced Recall Deck</p>
+              <h4>Unlocked Takeaways</h4>
+              <ul class="recall-list" id="edu-recall-list">
+                <li class="recall-empty">Complete step 3 of any module to pin its takeaway card for tomorrow's commute.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="edu-method" id="method">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-amber">Why the classroom is iOS first</p>
+          <h2>The lesson is the screen.</h2>
+          <p>
+            You are learning to build the iPhone app, on the iPhone. Each module
+            is a SwiftUI decision you can finish with a thumb, then see on the
+            preview beside the code.
+          </p>
+        </div>
+
+        <div class="beats">
+          <div class="method-card">
+            <span class="beat-index">Principle 01</span>
+            <h3>Read the SwiftUI first</h3>
+            <p>
+              The skill is spotting the line that breaks the screen, before you
+              try to retype the view on a glass keyboard.
+            </p>
+          </div>
+          <div class="method-card">
+            <span class="beat-index">Principle 02</span>
+            <h3>Visible cause and effect</h3>
+            <p>
+              Every token patch updates the live phone preview beside the snippet
+              so beginners immediately connect syntax to runtime behavior.
+            </p>
+          </div>
+          <div class="method-card">
+            <span class="beat-index">Principle 03</span>
+            <h3>Studio diffs become the next lesson</h3>
+            <p>
+              When the iOS studio ships a SwiftUI change, that hunk is the next
+              drill. Compose lessons wait on the Android studio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="platforms" id="studio-bridge">
+        <div class="section-head">
+          <p class="eyebrow">Ready to ship real code from your phone?</p>
+          <h2>Connect Learn to PhoneCoding Studio.</h2>
+        </div>
+
+        <div class="platform-grid">
+          <article class="platform-card is-primary">
+            <div class="platform-top">
+              <span class="platform-tag is-live">iOS 18+ · Early Build</span>
+              <span class="platform-os">iPhone · SwiftUI</span>
+            </div>
+            <h3>Studio for iOS</h3>
+            <p>
+              Speak tasks to your cloud agent, approve hunks with one thumb, and
+              send tricky diffs straight into Learn Mode.
+            </p>
+            <div class="platform-links">
+              <a class="button" href="index.html#ios-studio">Open iOS Studio →</a>
+            </div>
+          </article>
+
+          <article class="platform-card is-dev">
+            <div class="platform-top">
+              <span class="platform-tag is-dev-badge">Under Development</span>
+              <span class="platform-os">Android 15+ · Compose</span>
+            </div>
+            <h3>Studio for Android</h3>
+            <p>
+              Native Android engineering studio currently under development with
+              full support for voice dispatch, hunk review, and codebase lessons.
+            </p>
+            <div class="platform-links">
+              <a class="button button-quiet" href="index.html#android-studio">
+                View Android Status (Under Dev) →
+              </a>
+            </div>
+          </article>
+
+          <article class="platform-card is-edu">
+            <div class="platform-top">
+              <span class="platform-tag is-edu-badge">You Are Here</span>
+              <span class="platform-os">Web &amp; Mobile Browser</span>
+            </div>
+            <h3>This classroom</h3>
+            <p>
+              Bookmark it on your iPhone. The drills are SwiftUI. Android
+              lessons are under development with the Android studio.
+            </p>
+            <div class="platform-links">
+              <a class="button button-amber" href="#classroom">Back to Top of Classroom ↑</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-brand">
+        <p class="foot-title">PhoneCoding Learn</p>
+        <p class="foot-note">SwiftUI classroom · Android lessons under development</p>
+      </div>
+      <nav class="foot-links" aria-label="Footer links">
+        <a href="index.html">Studio Side</a>
+        <a href="index.html#ios-studio">Studio for iOS</a>
+        <a href="index.html#android-studio">Studio for Android (Under Dev)</a>
+      </nav>
+    </footer>
+
+    <script src="learn.js"></script>
+  </body>
+</html>
